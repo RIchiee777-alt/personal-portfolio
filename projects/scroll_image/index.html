@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <video autoplay muted loop>
+               <source src="Y2meta.app-ARK_ Survival Evolved Official Launch Trailer!.mp4">
+          </video>
+
+
+    <div class="container">
+        
+        <div class="slide">
+            
+
+             <div class="item" style="background-image: url(ark_creatures_img/Dossier_Araneo.jpg);">
+                 <div class="content">
+                    <div class="name">Araneo</div>
+                     <div class="des">The Araneomorphus, or better known as the Araneo or even simply the Spider, is one of the creatures in ARK: Survival Evolved. Additionally, they serve as minions in the Broodmother Arena</div>
+                     <button class="see-more" data-video-src="creatures_vid/honkai-star-rail-acheron-hand.mp4">See More</button>
+                     <button class="play-audio" data-audio-src="creatures_sound/Ark Survival Evolved (Araneo Sound Effects).mp3"><i class="fa-regular fa-circle-play"></i></button>
+                     <audio id="araneo-sound" src="creatures_sound/Ark Survival Evolved (Araneo Sound Effects).mp3" type="audio/mp3"></audio>
+                 </div>
+            </div>
+           
+            <div class="item" style="background-image: url(ark_creatures_img/Dossier_Argentavis.jpg);">
+                <div class="content">
+                   <div class="name">Argentavis</div>
+                    <div class="des">The Argentavis (Ar-jen-tah-vis), also referred to as the Argy, the Argent or the Argen, is a species of bird in ARK: Survival Evolved.</div>
+                    <button class="see-more" data-video-src="creatures_vid/Acheron-Honkai-Star-Rail.mp4">See More</button>
+                    <button class="play-audio" data-audio-src="creatures_sound/Ark Survival Evolved (Argentavis Sound Effects).mp3"><i class="fa-regular fa-circle-play"></i></button>
+                    <audio id="argentavis-sound" src="creatures_sound/Ark Survival Evolved (Argentavis Sound Effects).mp3" type="audio/mp3"></audio>
+                </div>
+           </div>
+           
+           <div class="item" style="background-image: url(ark_creatures_img/Dossier_Nameless.jpg);">
+              <div class="content">
+                 <div class="name">Nameless</div>
+                 <div class="des">The Nameless or Chupacabra is one of the Creatures in ARK: Survival Evolved's Aberration expansion</div>
+                 <button class="see-more" data-video-src="creatures_vid/Jujutsu-Kaisen-Shibuya-Arc.mp4">See More</button>
+                 <button class="play-audio" data-audio-src="creatures_sound/Ark_ Aberration (Nameless Sound Effects).mp3"><i class="fa-regular fa-circle-play"></i></button>
+                 <audio id="nameless-sound" src="creatures_sound/Ark_ Aberration (Nameless Sound Effects).mp3" type="audio/mp3"></audio>
+              </div>
+           </div>
+
+           <div class="item" style="background-image: url(ark_creatures_img/Dossier_Titanoboa.jpg);">
+              <div class="content">
+                 <div class="name">Titanoboa</div>
+                 <div class="des">The Titanoboa (Ty-tan-o-bo-ah) is one of the Creatures in ARK: Survival Evolved.</div>
+                 <button>See More</button>
+                 <button class="play-audio" data-audio-src="creatures_sound/Ark Survival Evolved (Titanoboa Sound Effects).mp3"><i class="fa-regular fa-circle-play"></i></button>
+                 <audio id="nameless-sound" src="creatures_sound/Ark Survival Evolved (Titanoboa Sound Effects).mp3" type="audio/mp3"></audio>
+              </div>
+           </div>
+
+           <div class="item" style="background-image: url(ark_creatures_img/gigantopithecus\ _ark.jpg);">
+              <div class="content">
+                 <div class="name">Gigantopithecus</div>
+                 <div class="des">Appearance:The Gigantopithecus is a close relative of the modern orangutan. However, it stands upright like a man but slightly taller, giving it a strong resemblance to Bigfoot or the yeti.</div>
+                 <button>See More</button>
+                 <button class="play-audio" data-audio-src="creatures_sound/Ark Survival Evolved (Gigantopithecus Sound Effects).mp3"><i class="fa-regular fa-circle-play"></i></button>
+                 <audio id="nameless-sound" src="creatures_sound/Ark Survival Evolved (Gigantopithecus Sound Effects).mp3" type="audio/mp3"></audio>
+              </div>
+           </div>
+
+           <div class="item" style="background-image: url(ark_creatures_img/Dossier_Baryonyx.jpg);">
+               <div class="content">
+                 <div class="name">Baryonyx</div>
+                 <div class="des">The Baryonyx (bare-ee-ON-iks) is one of the dinosaurs in ARK: Survival Evolved.</div>
+                 <button>See More</button>
+                 <button class="play-audio" data-audio-src="creatures_sound/Ark Survival Evolved (Baryonyx Sound Effects).mp3"><i class="fa-regular fa-circle-play"></i></button>
+                 <audio id="nameless-sound" src="creatures_sound/Ark Survival Evolved (Baryonyx Sound Effects).mp3" type="audio/mp3"></audio>
+               </div>
+           </div>
+        </div>
+      
+         <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></i></i></button>
+         </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

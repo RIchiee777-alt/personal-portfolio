@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pelanggaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+        <h1>Form Pelanggaran Siswa SMK TI BALI GLOBAL</h1>
+        <p>SILAHKAN ISI FORM DENGAN JUJUR,TELITI,DAN NETRAL!!</p>
+        <form id="form-pelanggaran">
+            <div class="form-group">
+                <label for="nama">Nama Siswa</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama siswa">
+            </div>
+            <div class="form-group">
+                <label for="kelamin">GENDER</label>
+                  <select name="kelamin" id="kelamin">
+                    <option value="">PILIH GENDER</option>
+                    <option value="pria">PRIA</option>
+                    <option value="wanita">WANITA</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <label for="kelas">Kelas</label>
+                    <select id="kelas" name="kelas">
+                    <option value="">Pilih kelas</option>
+                    <option value="X">X</option>
+                    <option value="X-RPL-4">X RPL 4</option>
+                    <option value="XI">XI</option>
+                    <option value="XI-RPL-4">XI RPL 4</option>
+                    <option value="XII">XII</option>
+                    <option value="XII-RPL-4">XII RPL 4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jurusan">JURUSAN</label>
+                    <select id="kelas" name="kelas">
+                    <option value="">Pilih Jurusan</option>
+                    <option value="RPL">Rekayasa Perangkat Lunak</option>
+                    <option value="AN">Animasi</option>
+                    <option value="DKV">Desain Komunikasi Visual</option>
+                    <option value="MM">MULTIMEDIA</option>
+                    <option value="TKJ">Teknik Komputer dan Jaringan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pelanggaran">Pelanggaran</label>
+                <textarea id="pelanggaran" name="pelanggaran" placeholder="Masukkan pelanggaran"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tanggal">Tanggal Pelanggaran</label>
+                <input type="date" id="date">
+            </div>
+            <div class="form-group">
+                <label for="waktu">Waktu Pelanggaran</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div class="form-group">
+                <label for="keterangan">Keterangan</label>
+                <textarea id="keterangan" name="keterangan" placeholder="Masukkan keterangan"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="bukti">Bukti Pelanggaran</label>
+                <input type="file" id="bukti" name="bukti">
+                <div id="preview-container"></div>
+            </div>
+            <div class="form-group">
+                <label for="sanksi">Sanksi Pelaku</label>
+                <input type="text" id="sanksi" placeholder="Masukkan Sanksi Yang Diberikan">
+            </div>
+            
+            <div class="form-group">
+                <label for="saksi">Saksi</label>
+                <input type="text" id="saksi" name="saksi" placeholder="Masukkan nama saksi">
+            </div>
+            <div class="form-group">
+                <label for="keterangan-saksi">Keterangan Saksi</label>
+                <textarea id="keterangan-saksi" name="keterangan-saksi" placeholder="Masukkan keterangan saksi"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tanggal-pelaporan">Tanggal Pelaporan</label>
+                <input type="date" id="tanggal-pelaporan" name="tanggal-pelaporan">
+            </div>
+            <div class="form-group">
+                <label for="waktu-pelaporan">Waktu Pelaporan</label>
+                <input type="time" id="waktu-pelaporan" name="waktu-pelaporan">
+            </div>
+            <div class="form-group">
+                <label for="email">EMAIL</label>
+                <textarea id="nama email" name="nama_email" placeholder="Masukkan alamat email"></textarea>
+            </div>
+            
+        
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  const buktiInput = document.getElementById('bukti');
+                  const previewContainer = document.getElementById('preview-container');
+                  
+                  buktiInput.addEventListener('change', function() {
+                    const file = buktiInput.files[0];
+                    const url = URL.createObjectURL(file);
+                    const img = document.createElement('img');
+                    img.src = url;
+                    img.width = 200; // set the width of the preview image
+                    previewContainer.innerHTML = '';
+                    previewContainer.appendChild(img);
+                  });
+                });
+              </script>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
